@@ -1,0 +1,219 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: SplitWithMe\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/i18n.py
+
+msgid "app_title"
+msgstr "SplitWithMe"
+
+msgid "friends_section"
+msgstr "Amigos"
+
+msgid "expenses_section"
+msgstr "Gastos"
+
+msgid "welcome_title"
+msgstr "Bienvenido a SplitWithMe"
+
+msgid "welcome_subtitle"
+msgstr "Gestiona tus gastos y compártelos con tus amigos"
+
+msgid "welcome_create_expense"
+msgstr "Crear nuevo gasto"
+
+
+
+# -------- FRIENDS VIEW --------
+
+msgid "search_friend_placeholder"
+msgstr "Buscar amigo..."
+
+msgid "search"
+msgstr "Buscar"
+
+msgid "reload"
+msgstr "Recargar"
+
+msgid "friend_name"
+msgstr "Nombre"
+
+msgid "friend_id"
+msgstr "ID del amigo"
+
+msgid "credit_balance_label"
+msgstr "Crédito"
+
+msgid "debit_balance_label"
+msgstr "Débito"
+
+msgid "net_balance_label"
+msgstr "Balance neto"
+
+msgid "assigned_to"
+msgstr "Asignado a"
+
+msgid "debit"
+msgstr "débit"
+
+msgid "credit"
+msgstr "crédito"
+
+msgid "friends_loaded_count"
+msgstr "Amigos cargados: {count}"
+
+msgid "selected_id"
+msgstr "Seleccionado ID {id}"
+
+msgid "friend_not_found"
+msgstr "No se encontró al amigo"
+
+
+
+# -------- EXPENSES VIEW --------
+
+msgid "search_expense_placeholder"
+msgstr "Buscar gasto..."
+
+msgid "create_expense"
+msgstr "Crear gasto"
+
+msgid "edit_expense"
+msgstr "Editar gasto"
+
+msgid "delete_expense"
+msgstr "Eliminar gasto"
+
+msgid "view"
+msgstr "Ver"
+
+msgid "id"
+msgstr "ID"
+
+msgid "description"
+msgstr "Descripción"
+
+msgid "date"
+msgstr "Fecha"
+
+msgid "amount"
+msgstr "Importe"
+
+msgid "num_expenses_count"
+msgstr "Número de gastos: {count}"
+
+msgid "expense_not_found"
+msgstr "Gasto no encontrado"
+
+msgid "select_expense_first"
+msgstr "Selecciona un gasto primero"
+
+msgid "delete_error_prefix"
+msgstr "Error al eliminar: "
+
+msgid "expense_deleted_prefix"
+msgstr "Gasto eliminado: "
+
+msgid "created_expense_prefix"
+msgstr "Gasto creado: "
+
+msgid "updated_expense_prefix"
+msgstr "Gasto actualizado: "
+
+msgid "load_expense_error_prefix"
+msgstr "Error al cargar el gasto: "
+
+msgid "creating_expense_prefix"
+msgstr "Error al crear el gasto: "
+
+msgid "updating_expense_prefix"
+msgstr "Error al actualizar el gasto: "
+
+msgid "missing_required_field"
+msgstr "Faltan campos obligatorios"
+
+msgid "invalid_field"
+msgstr "Datos inválidos"
+
+msgid "invalid_amount"
+msgstr "Cantidad inválida"
+
+
+
+# -------- DETAIL EXPENSE VIEW --------
+
+msgid "back"
+msgstr "Volver"
+
+msgid "expense_id"
+msgstr "ID del gasto"
+
+msgid "expense_date"
+msgstr "Fecha del gasto"
+
+msgid "credit_balance"
+msgstr "Crédito asignado"
+
+msgid "amount_total"
+msgstr "Total"
+
+msgid "update_credit"
+msgstr "Actualizar crédito"
+
+msgid "add_friend"
+msgstr "Añadir amigo"
+
+msgid "update_credit_title"
+msgstr "Actualizar crédito"
+
+msgid "new_amount_label"
+msgstr "Nuevo importe"
+
+msgid "add_friend_title"
+msgstr "Añadir amigo al gasto"
+
+msgid "select_friend"
+msgstr "Seleccionar amigo"
+
+msgid "no_friend_selected"
+msgstr "No se seleccionó ningún amigo"
+
+#----------------POUPS---------------
+msgid "cancel"
+msgstr "Cancelar"
+
+msgid "add"
+msgstr "Añadir"
+
+msgid "save"
+msgstr "Guardar"
+
+msgid "server_error_offline"
+msgstr "Error imposible conectarse al servidor"
+
+msgid "accept" 
+msgstr "Aceptar"
+
+msgid "field_description_label" 
+msgstr "Descripción"
+
+msgid "field_date_label"
+msgstr "Fecha AAAA-MM-DD"
+
+msgid "field_amount_label"
+msgstr "Cantidad €"
+
+msgid "€"
+msgstr "€"
+
+
+msgid "error_prefix"
+msgstr "Error: "
+
+msgid "cannot_delete_friend_with_credit"
+msgstr "No puedes eliminar a un amigo que tiene crédito asignado."
+

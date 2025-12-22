@@ -1,0 +1,121 @@
+<!--aria: atributos para mejorar la accesibilidad-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Informe de gastos compartidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/ipm.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Informe de gastos compartidos</h1>
+    <p class="app-header__subtitle">
+      Resumen de viajes, cenas y otros gastos entre amistades.
+    </p>
+  </header>
+
+  <main id="main-content">
+    <!-- Resumen general -->
+    <section aria-labelledby="resumen-titulo" class="panel panel--summary">
+      <h2 id="resumen-titulo">Resumen</h2>
+      <dl class="summary-list">
+        <div class="summary-list__item"><dt>Total de gastos</dt><dd>—</dd></div>
+        <div class="summary-list__item"><dt>Número de actividades</dt><dd>—</dd></div>
+        <div class="summary-list__item"><dt>Persona que más debe</dt><dd>—</dd></div>
+      </dl>
+    </section>
+
+    <!-- GASTOS -->
+    <section aria-labelledby="gastos-titulo" class="panel panel--gastos">
+      <div class="panel__header">
+        <h2 id="gastos-titulo">Gastos</h2>
+        <button id="add-expense-button" type="button" class="btn-primary">Añadir gasto</button>
+      </div>
+
+      <form class="search-form" aria-label="Buscar gasto por nombre">
+        <label for="search-expense">Buscar por nombre de gasto</label>
+        <input id="search-expense" type="search" placeholder="Ej. Viaje a Madrid">
+      </form>
+
+      <div class="expenses-list" aria-live="polite"></div> <!-- aria-live = polite indica que el contenido dentro del elemento puede cambiar dinamicamente y que el lector de pantalla debe anunciar los cambios de forma no intrusiva-->
+    </section>
+
+    <!-- AMIGOS -->
+    <section aria-labelledby="friends-title" class="panel panel--friends"> <!-- aria indica que el encabezado con ese id sirve como titulo acccesible de la seccion-->
+      <div class="panel__header">
+        <h2 id="friends-title">Amigos</h2>
+      </div>
+
+      <form class="search-form" aria-label="Buscar amigo por nombre"> <!-- aria-label= texto sirve para asignar un nombre accesible cuando no existe texto visible o no es suficientemente claro -->
+        <label for="search-friend">Buscar por nombre de amigo</label>
+        <input id="search-friend" type="search" placeholder="Ej. Lucas">
+      </form>
+
+      <div class="friends-list"></div>
+    </section>
+
+    <!-- POPUP 1: AÑADIR GASTO -->
+    <section id="dialog-add-expense" class="dialog" role="dialog" aria-modal="true" hidden> <!-- mientras el dialogo este abierto el resto de la pagina queda bloqueada para la navegacion   -->
+      <div class="dialog__content">
+        <button type="button" class="dialog__close">&times;</button>
+        <h2>Añadir gasto</h2>
+
+        <form>
+            <p><label>Nombre: <input id="add-expense-name"></label></p>
+            <p><label>Fecha: <input id="add-expense-date" type="date"></label></p>
+          <label>Importe: <input id="add-expense-amount" type="number"></label>
+
+          <div class="dialog__actions">
+            <button type="button" class="btn-primary accept">Aceptar</button>
+            <button type="button" class="btn-secondary cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- POPUP 2: DETALLE GASTO -->
+    <section id="dialog-view-expense" class="dialog" role="dialog" aria-modal="true" hidden> <!-- dice explicitamente que esta seccion es un dialogo/popup-->
+      <div class="dialog__content dialog__content--wide">
+        <button type="button" class="dialog__close">&times;</button>
+        <h2>Detalles</h2>
+
+        <p class="details-title"><strong></strong></p>
+        <div class="details-expense-meta">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="details-expense-layout">
+          <ul class="details-participants"></ul>
+          <div class="details-credit-debit"></div>
+        </div>
+
+        <div class="details-add-friend">
+          <span>👤</span>
+          <select class="add-friend-select"></select>
+          <button type="button" class="btn-primary btn-small add-friend-btn">+</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPUP 3: DETALLE AMIGO -->
+    <section id="dialog-view-friend" class="dialog" role="dialog" aria-modal="true" hidden>
+      <div class="dialog__content dialog__content--wide">
+        <button type="button" class="dialog__close">&times;</button>
+        <h2>Detalles</h2>
+
+        <p class="friend-details__title"><strong></strong></p>
+        <p class="friend-details__summary"><span></span><span></span></p>
+        <ul class="friend-expenses"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer"><p>Gastos compartidos</p></footer>
+  <!-- Contenedor para mensajes transitorios (toasts) -->
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

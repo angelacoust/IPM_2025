@@ -1,0 +1,77 @@
+# Flutter / Dart
+# Ignore Dart tools and generated files
+**/.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Build outputs (Android, iOS, Flutter)
+**/build/
+/build/
+/Codigo-Movil/build/
+
+# Android/Gradle
+**/.gradle/
+**/local.properties
+**/app/**/*.apk
+*.apk
+*.ap_
+*.aar
+
+# Android build intermediates and caches
+**/intermediates/
+**/outputs/
+**/generated/
+**/tmp/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+
+# Xcode
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# macOS
+macos/Flutter/Flutter-*.xcconfig
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Generated plugin registrant (flutter)
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Gradle wrapper and user cache
+/.gradle/
+
+# Keystore files (sensitive)
+*.jks
+*.keystore
+
+# Misc
+*.log
+*.tmp
+*.swp
+
+# OS files
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*.DS_Store
+
+# Ignore pub cache and other local caches
+.pub/
+
+# Ignore build outputs created by IDEs
+**/out/
+
+# Keep pubspec.lock tracked for apps (do not ignore)

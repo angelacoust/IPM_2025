@@ -1,0 +1,221 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: SplitWithMe\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/i18n.py
+
+msgid "app_title"
+msgstr "SplitWithMe"
+
+msgid "friends_section"
+msgstr "Friends"
+
+msgid "expenses_section"
+msgstr "Expenses"
+
+msgid "welcome_title"
+msgstr "Welcome to SplitWithMe"
+
+msgid "welcome_subtitle"
+msgstr "Manage your shared expenses easily"
+
+msgid "welcome_create_expense"
+msgstr "Create new expense"
+
+
+
+# -------- FRIENDS VIEW --------
+
+msgid "search_friend_placeholder"
+msgstr "Search friend..."
+
+msgid "search"
+msgstr "Search"
+
+msgid "reload"
+msgstr "Reload"
+
+msgid "friend_name"
+msgstr "Name"
+
+msgid "friend_id"
+msgstr "Friend ID"
+
+msgid "credit_balance_label"
+msgstr "Credit"
+
+msgid "debit_balance_label"
+msgstr "Debit"
+
+msgid "net_balance_label"
+msgstr "Net balance"
+
+msgid "assigned_to"
+msgstr "Assigned to"
+
+msgid "debit"
+msgstr "debit"
+
+msgid "credit"
+msgstr "credit"
+
+msgid "friends_loaded_count"
+msgstr "Friends loaded: {count}"
+
+msgid "selected_id"
+msgstr "Selected ID {id}"
+
+msgid "friend_not_found"
+msgstr "Friend not found"
+
+
+
+# -------- EXPENSES VIEW --------
+
+msgid "search_expense_placeholder"
+msgstr "Search expense..."
+
+msgid "create_expense"
+msgstr "Create expense"
+
+msgid "edit_expense"
+msgstr "Edit expense"
+
+msgid "delete_expense"
+msgstr "Delete expense"
+
+msgid "view"
+msgstr "View"
+
+msgid "id"
+msgstr "ID"
+
+msgid "description"
+msgstr "Description"
+
+msgid "date"
+msgstr "Date"
+
+msgid "amount"
+msgstr "Amount"
+
+msgid "num_expenses_count"
+msgstr "Number of expenses: {count}"
+
+msgid "expense_not_found"
+msgstr "Expense not found"
+
+msgid "select_expense_first"
+msgstr "Select an expense first"
+
+msgid "delete_error_prefix"
+msgstr "Delete error: "
+
+msgid "expense_deleted_prefix"
+msgstr "Expense deleted: "
+
+msgid "created_expense_prefix"
+msgstr "Expense created: "
+
+msgid "updated_expense_prefix"
+msgstr "Expense updated: "
+
+msgid "load_expense_error_prefix"
+msgstr "Load error: "
+
+msgid "creating_expense_prefix"
+msgstr "Creation error: "
+
+msgid "updating_expense_prefix"
+msgstr "Update error: "
+
+msgid "missing_required_field"
+msgstr "Missing required field"
+
+msgid "invalid_field"
+msgstr "Invalid field"
+
+msgid "invalid_amount"
+msgstr "Invalid amount"
+
+
+
+# -------- DETAIL EXPENSE VIEW --------
+
+msgid "back"
+msgstr "Back"
+
+msgid "expense_id"
+msgstr "Expense ID"
+
+msgid "expense_date"
+msgstr "Expense date"
+
+msgid "credit_balance"
+msgstr "Assigned credit"
+
+msgid "amount_total"
+msgstr "Total amount"
+
+msgid "update_credit"
+msgstr "Update credit"
+
+msgid "add_friend"
+msgstr "Add friend"
+
+msgid "update_credit_title"
+msgstr "Update credit"
+
+msgid "new_amount_label"
+msgstr "New amount"
+
+msgid "add_friend_title"
+msgstr "Add friend to expense"
+
+msgid "select_friend"
+msgstr "Select friend"
+
+msgid "no_friend_selected"
+msgstr "No friend selected"
+
+#-----------------POPUPS------------
+
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "add"
+msgstr "Add"
+
+msgid "save"
+msgstr "Save"
+
+msgid "server_error_offline"
+msgstr "Error imposible connect to the server"
+
+msgid "accept"
+msgstr "Accept"
+
+msgid "field_description_label" 
+msgstr "Description"
+
+msgid "field_date_label"
+msgstr "Date YYYY-MM-DD"
+
+msgid "field_amount_label"
+msgstr "Amount"
+
+msgid "€"
+msgstr "$"
+
+
+msgid "error_prefix"
+msgstr "Error: "
+
+msgid "cannot_delete_friend_with_credit"
+msgstr "You cannot delete a friend who still has assigned credit."
+
